@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/guideline"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toTopOf="@id/ivIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="12dp"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:background="@color/gray_500"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.HealthBeats.Rounded"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivMask"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/gray_500_20"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.HealthBeats.Rounded"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="10dp"
+        app:tint="@color/gray_500"
+        android:background="@drawable/background_card"
+        app:srcCompat="@drawable/ic_icon_hospital"
+        android:layout_margin="12dp"
+        app:layout_constraintStart_toStartOf="@id/ivBackground"
+        app:layout_constraintBottom_toBottomOf="@id/ivBackground"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="4dp"
+        android:layout_marginHorizontal="12dp"
+        app:layout_constraintTop_toTopOf="@id/ivIcon"
+        app:layout_constraintStart_toEndOf="@id/ivIcon"
+        tools:text="BYOD PO Programee 1"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:layout_marginHorizontal="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintBottom_toBottomOf="@id/ivIcon"
+        app:layout_constraintStart_toEndOf="@id/ivIcon"
+        tools:text="Oxygen Saturation and Heart Rate"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

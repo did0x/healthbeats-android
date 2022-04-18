@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_menu"
+    app:startDestination="@id/careTaskFragment">
+    <fragment
+        android:id="@+id/careTaskFragment"
+        android:name="co.saputra.healthbeats.arch.ui.CareTaskFragment"
+        android:label="fragment_care_task"
+        tools:layout="@layout/fragment_care_task" />
+    <fragment
+        android:id="@+id/carePlanFragment"
+        android:name="co.saputra.healthbeats.arch.ui.CarePlanFragment"
+        android:label="fragment_care_plan"
+        tools:layout="@layout/fragment_care_plan" />
+    <fragment
+        android:id="@+id/careChatFragment"
+        android:name="co.saputra.healthbeats.arch.ui.CareChatFragment"
+        android:label="fragment_care_chat"
+        tools:layout="@layout/fragment_care_chat" />
+    <fragment
+        android:id="@+id/vitalFragment"
+        android:name="co.saputra.healthbeats.arch.ui.VitalFragment"
+        android:label="fragment_vital"
+        tools:layout="@layout/fragment_vital" />
+</navigation>

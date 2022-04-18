@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/careTaskFragment"
+        android:title="Care Tasks"
+        android:icon="@drawable/ic_menu_task" />
+    <item
+        android:id="@+id/carePlanFragment"
+        android:title="Care Plans"
+        android:icon="@drawable/ic_menu_plan" />
+    <item
+        android:id="@+id/vitalFragment"
+        android:title="Vitals"
+        android:icon="@drawable/ic_menu_vital" />
+    <item
+        android:id="@+id/careChatFragment"
+        android:title="Care Chat"
+        android:icon="@drawable/ic_menu_chat" />
+</menu>
